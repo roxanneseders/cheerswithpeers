@@ -1,5 +1,7 @@
+import Layout from "../comps/MyLayout.js";
+
 export default () => (
-  <div>
+  <Layout>
     <p>Hope you find what you're looking for</p>
-  </div>
+  </Layout>
 );
