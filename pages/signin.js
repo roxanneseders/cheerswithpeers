@@ -1,5 +1,7 @@
+import Layout from "../comps/MyLayout.js";
+
 export default () => (
-  <div>
+  <Layout>
     <p>Tell us about you</p>
-  </div>
+  </Layout>
 );

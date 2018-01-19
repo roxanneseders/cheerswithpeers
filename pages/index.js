@@ -1,22 +1,47 @@
-import Link from "next/link";
+import Header from "../comps/Header";
+import Layout from "../comps/MyLayout.js";
+//added 1/19
+import Markdown from "react-markdown";
 
-const Index = () => (
-  <div>
-    <Link href="/about">
-      <button>About</button>
-    </Link>
-    <Link href="/bars">
-      <button>Bars</button>
-    </Link>
-    <Link href="/home">
-      <button>Home</button>
-    </Link>
-    <Link href="/signin">
-      <button>Sign in</button>
-    </Link>
+export default props => (
+  <Layout>
+    <h1>{props.url.query.title}</h1>
+    <div className="markdown">
+      <Markdown
+        source={`
+This is our project.
+Yes. We have  buttons and we have a title as well.
 
-    <p>CHEERS</p>
-  </div>
+### CHEERS
+
+
+     `}
+      />
+    </div>
+    <style jsx global>{`
+      .markdown {
+        font-family: "Arial";
+      }
+
+      .markdown a {
+        text-decoration: none;
+        color: blue;
+      }
+
+      .markdown a:hover {
+        opacity: 0.6;
+      }
+
+      .markdown h3 {
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+      }
+    `}</style>
+  </Layout>
 );
-
-export default Index;
+// export default () => (
+//   <Layout>
+//     <p>CHEERS</p>
+//   </Layout>
+// );
