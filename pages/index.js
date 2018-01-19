@@ -1,22 +1,30 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 const Index = () => (
   <div>
     <Link href="/about">
-      <button>About</button>
+      <a>About Page</a>
     </Link>
-    <Link href="/bars">
-      <button>Bars</button>
-    </Link>
+    <p>About</p>
+  </div>
+    <div>
+  <Link href="/bars">
+    <a>Bars Page</a>
+  </Link>
+  <p>Drink up</p>
+</div>
+<div>
     <Link href="/home">
-      <button>Home</button>
+      <a>Home Page</a>
     </Link>
-    <Link href="/signin">
-      <button>Sign in</button>
-    </Link>
-
     <p>CHEERS</p>
   </div>
-);
+  <div>
+  <Link href="/signin">
+    <a>Sign In</a>
+  </Link>
+  <p>Tell us about you</p>
+</div>
+)
 
 export default Index;
