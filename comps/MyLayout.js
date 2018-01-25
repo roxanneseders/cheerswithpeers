@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "./Navbar";
 import BttmBttnNv from "./BttmBttnNv";
 
+
 const MyLayout = props => (
   <div>
     <Head>

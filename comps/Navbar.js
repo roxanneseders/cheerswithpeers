@@ -5,13 +5,13 @@ const Navbar = () => (
     <div className="container">
       <a className="navbar-brand" href="#" />
       <div className="collapse navbar-collapse">
-        <ul className="navbar-nav ml-auto">
+        <ul className="navbar-nav l-auto">
           <li className="nav-item">
             <Link href="/">
               <a className="nav-link">Home</a>
             </Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link href="/about">
               <a className="nav-link">About</a>
             </Link>
@@ -25,7 +25,7 @@ const Navbar = () => (
                 </Link>
               </li>
             </li>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
