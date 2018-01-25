@@ -1,25 +1,12 @@
-import Header from "../comps/Header";
-import Layout from "../comps/MyLayout.js";
+import Layout from "../comps/MyLayout";
 
-//added 1/22
-
-import Link from "next/link";
-
-const PostLink = props => (
-  <li>
-    <Link href={`/post?title=${props.title}`}>
-      <a>{props.title}</a>
-    </Link>
-  </li>
-);
-
-export default () => (
+const Index = props => (
   <Layout>
-    <h1>CHEERS</h1>
-    <ul>
-      <PostLink title="About" />
-      <PostLink title="Bars" />
-      <PostLink title="Sign in" />
-    </ul>
+    <div>
+      <h1>Cheers</h1>
+      <p>Where do you want togo</p>
+    </div>
   </Layout>
 );
+
+export default Index;
