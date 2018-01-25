@@ -1,24 +1,21 @@
-import Link from "next/link";
+import Header from "./Header";
 
-const linkStyle = {
-  marginRight: 15
-};
-
-const Header = () => (
+const Layout = props => (
   <div>
-    <Link href="/">
-      <button style={linkStyle}>Home</button>
-    </Link>
-    <Link href="/about">
-      <button style={linkStyle}>About</button>
-    </Link>
-    <Link href="/bars">
-      <button style={linkStyle}>Bars</button>
-    </Link>
-    <Link href="/signin">
-      <button style={linkStyle}>Sign in</button>
-    </Link>
+    <h1>
+      <title>Cheers!</title>
+      <link
+        rel="stylesheet"
+        href="https://bootswatch.com/4/cerulean/bootstrap.min.css"
+      />
+    </h1>
+    <div className="container">
+      <div />
+      {/* </div> "style"={"layoutStyle"}> */}
+      <Header />
+      {props.children}
+    </div>
   </div>
 );
 
-export default Header;
+export default Layout;

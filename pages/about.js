@@ -1,7 +1,11 @@
 import Layout from "../comps/MyLayout.js";
 
-export default () => (
+const About = () => (
   <Layout>
-    <p>This is us</p>
+    <div>
+      <p>Any place you want to go</p>
+    </div>
   </Layout>
 );
+
+export default About;
