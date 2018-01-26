@@ -1,4 +1,4 @@
-import Layout from "../comps/MyLayout.js";
+import Layout from "../comps/Layout.js";
 
 const About = () => (
   <Layout>

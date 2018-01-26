@@ -1,4 +1,4 @@
-import Layout from "../comps/MyLayout";
+import Layout from "../comps/Layout";
 
 const Index = props => (
   <Layout>
