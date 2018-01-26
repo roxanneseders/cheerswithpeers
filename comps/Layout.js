@@ -2,7 +2,7 @@ import Head from "next/head";
 import Navbar from "./Navbar";
 import BttmBttnNv from "./BttmBttnNv";
 
-const MyLayout = props => (
+const Layout = props => (
   <div>
     <Head>
       <title>CHEERS</title>
@@ -19,5 +19,5 @@ const MyLayout = props => (
   </div>
 );
 
-export default MyLayout;
+export default Layout;
 //<--notes:

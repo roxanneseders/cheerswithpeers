@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 import Layout from "../comps/Layout.js";
-=======
-import Layout from "../comps/MyLayout.js";
-import BttmBttnNv from "../comps/MyLayout.js";
->>>>>>> master
+import BttmBttnNv from "../comps/Layout.js";
 
 export default () => (
   <Layout>
