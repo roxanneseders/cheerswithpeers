@@ -13,7 +13,7 @@ const MyLayout = props => (
       />
     </Head>
     <Navbar />
-    <SearchYelp />
+
 
     <div className="container">{props.children}</div>
 
