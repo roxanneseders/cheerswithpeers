@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "./Navbar";
 import BttmBttnNv from "./BttmBttnNv";
 
+
 const MyLayout = props => (
   <div>
     <Head>
@@ -13,9 +14,11 @@ const MyLayout = props => (
     </Head>
     <Navbar />
 
-    <div className="container">{props.children}</div>
 
+    <div className="container">{props.children}</div>
+    <img src='../static/img/logo.png' />
     <BttmBttnNv />
+
   </div>
 );
 
