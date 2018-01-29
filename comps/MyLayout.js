@@ -16,8 +16,9 @@ const MyLayout = props => (
 
 
     <div className="container">{props.children}</div>
-
+    <img src='../static/img/logo.png' />
     <BttmBttnNv />
+
   </div>
 );
 

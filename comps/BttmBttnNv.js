@@ -2,17 +2,17 @@ import Link from "next/link";
 
 const BttmBttnNv = () => (
   <nav className="navbar navbar-expand-lg navbar">
-    <button
+    {/* <button>
       className="navbar-toggler"
       type="button"
       data-toggle="collapse"
       data-target="#navbarColor01"
-      aria-controls="navbarColor01"
+      aria-controls="navbarColor01"  <----WHAT IS THIS FOR?
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon" />
-    </button>
+      <span className="navbar-toggler-icon" />
+    </button> */}
 
     <div className="collapse navbar-collapse" id="navbarColor01">
       <ul className="navbar-nav m-auto">
@@ -37,7 +37,7 @@ const BttmBttnNv = () => (
         </li>
       </ul>
     </div>
-  </nav>
+  </nav >
 );
 
 export default BttmBttnNv;
