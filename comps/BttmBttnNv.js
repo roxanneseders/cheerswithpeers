@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const BttmBttnNv = () => (
-  <nav class="navbar navbar-expand-lg navbar">
+  <nav className="navbar navbar-expand-lg navbar">
     <button
-      class="navbar-toggler"
+      className="navbar-toggler"
       type="button"
       data-toggle="collapse"
       data-target="#navbarColor01"
@@ -14,17 +14,17 @@ const BttmBttnNv = () => (
       <span class="navbar-toggler-icon" />
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav m-auto">
-        <li class="nav-item active" />
+    <div className="collapse navbar-collapse" id="navbarColor01">
+      <ul className="navbar-nav m-auto">
+        <li className="nav-item active" />
 
-        <li class="nav-item">
+        <li className="nav-item">
           <Link href="/bars">
             <a className="nav-link">Bars</a>
           </Link>
         </li>
 
-        <li class="nav-item">
+        <li className="nav-item">
           <Link href="/signin">
             <a className="nav-link">Sign In</a>
           </Link>
