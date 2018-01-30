@@ -2,7 +2,7 @@ import Head from "next/head";
 import Navbar from "./Navbar";
 import BttmBttnNv from "./BttmBttnNv";
 
-const Layout = props => (
+const MyLayout = props => (
   <div>
     <Head>
       <title>CHEERS</title>
@@ -15,6 +15,7 @@ const Layout = props => (
 
     <div className="container">{props.children}</div>
 
+    <img src="../static/img/craftbeer.jpg" />
     <BttmBttnNv />
   </div>
 );

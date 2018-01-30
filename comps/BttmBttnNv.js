@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const BttmBttnNv = () => (
-  <nav class="navbar navbar-expand-lg navbar">
+  <nav className="navbar navbar-expand-lg navbar">
     <button
-      class="navbar-toggler"
+      className="navbar-toggler"
       type="button"
       data-toggle="collapse"
       data-target="#navbarColor01"
@@ -11,20 +11,20 @@ const BttmBttnNv = () => (
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon" />
+      <span className="navbar-toggler-icon" />
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav m-auto">
-        <li class="nav-item active" />
+    <div className="collapse navbar-collapse" id="navbarColor01">
+      <ul className="navbar-nav m-auto">
+        <li className="nav-item active" />
 
-        <li class="nav-item">
+        <li className="nav-item">
           <Link href="/bars">
             <a className="nav-link">Bars</a>
           </Link>
         </li>
 
-        <li class="nav-item">
+        <li className="nav-item">
           <Link href="/signin">
             <a className="nav-link">Sign In</a>
           </Link>
@@ -36,13 +36,13 @@ const BttmBttnNv = () => (
           </Link>
         </li>
       </ul>
-    </div>
-  </nav>
+    </div >
+  </nav >
 );
 
 export default BttmBttnNv;
 
-// {     <---- code below is from 1. bootswatch  2. Links are from Navbar.js
+// {     < ---- code below is from 1. bootswatch  2. Links are from Navbar.js
 //   <Link href="/">
 //               <a className="nav-link">Home</a>
 //             </Link>
