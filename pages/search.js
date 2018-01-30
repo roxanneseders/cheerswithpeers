@@ -1,34 +1,21 @@
-import Layout from "../comps/MyLayout.js";
+import MyLayout from "../comps/MyLayout.js";
+import SearchBar from "../comps/SearchBar.js";
 
-("use strict");
+class Search extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { pictures: [] };
+  }
 
-const yelp = require("yelp-fusion");
+  render() {
+    return;
+  }
+}
 
-// Place holder for Yelp Fusion's API Key. Grab them
-// from https://www.yelp.com/developers/v3/manage_app
-const apiKey =
-  "Pu9AtNK5eBvInV3K9wYYI61bfEE5zy_NGh9CUI_x02IJEnxb4l26ckygnr20v3IEgoFtkGm68-sao8jPPhhVU1a8NL6l0AGsJrl6VNW_UQM4zDdcKKOeV2IQPmhmWnYx";
-
-const searchRequest = {
-  categories: "nightlife",
-  term: "music",
-  location: "phoenix, az"
+export default () => {
+  return (
+    <MyLayout>
+      <SearchBar />
+    </MyLayout>
+  );
 };
-
-const client = yelp.client(apiKey);
-
-client
-  .search(searchRequest)
-  .then(response => {
-    const firstResult = response.jsonBody.businesses;
-    const prettyJson = JSON.stringify(firstResult, null, 4);
-    console.log(prettyJson);
-  })
-  .catch(e => {
-    console.log(e);
-  });
-export default () => (
-  <Layout>
-    <p>Search here.</p>
-  </Layout>
-);
