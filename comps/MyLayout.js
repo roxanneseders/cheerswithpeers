@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import BttmBttnNv from "./BttmBttnNv";
 
 
+
 const MyLayout = props => (
   <div>
     <Head>
@@ -16,7 +17,8 @@ const MyLayout = props => (
 
 
     <div className="container">{props.children}</div>
-    <img src='../static/img/logo.png' />
+
+    <img src='../static/img/craftbeer.jpg' />
     <BttmBttnNv />
 
   </div>
