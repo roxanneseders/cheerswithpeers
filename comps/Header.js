@@ -1,5 +1,3 @@
-// import Header from "./Header";
-
 const Layout = props => (
   <div>
     <h1>

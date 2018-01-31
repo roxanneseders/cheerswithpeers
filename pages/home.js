@@ -1,5 +1,4 @@
 import Layout from "../comps/Layout.js";
-import BttmBttnNv from "../comps/Layout.js";
 
 export default () => (
   <Layout>
