@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 import Layout from "../comps/Layout.js";
-=======
-import MyLayout from "../comps/MyLayout.js";
 import SearchBar from "../comps/SearchBar.js";
->>>>>>> master
 
 class Search extends React.Component {
   constructor(props) {
