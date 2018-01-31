@@ -8,6 +8,7 @@ const MyLayout = props => (
   <div>
     <Head>
       <title>CHEERS</title>
+      <link rel="icon" href="/static/favicon.ico" />
       <link
         rel="stylesheet"
         href="https://bootswatch.com/4/cerulean/bootstrap.min.css"
