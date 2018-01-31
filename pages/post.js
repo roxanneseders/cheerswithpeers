@@ -38,3 +38,5 @@ export default props => (
     `}</style>
   </Layout>
 );
+
+export default post;
