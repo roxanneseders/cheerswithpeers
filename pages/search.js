@@ -1,6 +1,7 @@
+import React from "react";
 import MyLayout from "../comps/MyLayout.js";
 import SearchBar from "../comps/SearchBar.js";
-import client from "../comps/SearchQuery.js";
+import searchQuery from "../comps/SearchQuery.js";
 
 class Search extends React.Component {
   constructor(props) {
@@ -12,6 +13,8 @@ class Search extends React.Component {
   }
 
   handleSubmit(keyword) {
+    console.log(keyword);
+    searchQuery(keyword);
     this.setState({
       keyword
     });
@@ -20,17 +23,20 @@ class Search extends React.Component {
   render() {
     return (
       <div>
-        <SearchBar onDataFetched={this.handleSubmit} />
+        <MyLayout>
+          <SearchBar onDataFetched={this.handleSubmit} />
+        </MyLayout>
       </div>
     );
   }
 }
-console.log();
 
-export default () => {
-  return (
-    <MyLayout>
-      <SearchBar />
-    </MyLayout>
-  );
-};
+export default Search;
+
+// export default () => {
+//   return (
+//     <MyLayout>
+//       <SearchBar />
+//     </MyLayout>
+//   );
+// };
