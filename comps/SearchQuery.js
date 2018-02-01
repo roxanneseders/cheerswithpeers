@@ -1,3 +1,5 @@
+import Search from "../pages/search.js";
+
 ("use strict");
 
 const yelp = require("yelp-fusion");
