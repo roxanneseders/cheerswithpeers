@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tonybadguy/call-me-maybe": "^2.0.1",
+    "google-places-web": "^0.1.4",
     "net": "^1.0.2",
     "next": "^4.2.3",
     "react": "^16.2.0",

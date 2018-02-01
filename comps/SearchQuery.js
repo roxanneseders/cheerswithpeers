@@ -1,26 +1,15 @@
 import Search from "../pages/search.js";
-import cheersFusion from "../lib/yelp-fusion.js";
+import Places from "google-places-web";
 
-// Place holder for Yelp Fusion's API Key. Grab them
-// from https://www.yelp.com/developers/v3/manage_app
-const apiKey =
-  "Pu9AtNK5eBvInV3K9wYYI61bfEE5zy_NGh9CUI_x02IJEnxb4l26ckygnr20v3IEgoFtkGm68-sao8jPPhhVU1a8NL6l0AGsJrl6VNW_UQM4zDdcKKOeV2IQPmhmWnYx";
+Places.apiKey = "AIzaSyAtUabKXHc739JYZtH9EGaiInEo_H-LH4o";
+Places.debug = true;
 
-export default x => {
-  const client = cheersFusion.client(apiKey);
-  const searchRequest = {
-    categories: "nightlife",
-    term: x,
-    location: "phoenix, az"
-  };
-  return client
-    .search(searchRequest)
-    .then(response => {
-      const firstResult = response.jsonBody.businesses;
-      const prettyJson = JSON.stringify(firstResult, null, 4);
-      console.log(prettyJson);
-    })
-    .catch(e => {
-      console.log(e);
-    });
-};
+Places.autocomplete({ input: "music" })
+  .then(places => places[3] || {})
+  .then(
+    place => (place.place_id ? Places.details({ placeid: place.place_id }) : {})
+  )
+  .then(details => {
+    console.log(JSON.stringify(details, null, 2));
+  })
+  .catch(e => console.log(e.message));

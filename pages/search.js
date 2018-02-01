@@ -1,7 +1,7 @@
 import React from "react";
 import MyLayout from "../comps/MyLayout.js";
 import SearchBar from "../comps/SearchBar.js";
-import searchQuery from "../comps/SearchQuery.js";
+import SearchQuery from "../comps/SearchQuery.js";
 
 class Search extends React.Component {
   constructor(props) {
@@ -14,11 +14,14 @@ class Search extends React.Component {
 
   handleSubmit(keyword) {
     console.log(keyword);
-    searchQuery(keyword);
+    // console.log(SearchQuery(keyword));
+    SearchQuery(keyword).then(x => console.log(x));
     this.setState({
       keyword
     });
   }
+
+  prettyJsonChange() {}
 
   render() {
     return (
