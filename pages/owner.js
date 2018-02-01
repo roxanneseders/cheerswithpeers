@@ -1,12 +1,21 @@
-import Layout from "../comps/Layout";
+import Layout from "../comps/Layout.js";
+import Owner from "../comps/Owner.js";
 
-const Owner = () => (
-  <Layout>
-    <div>
-      <h1>Cheers</h1>
-      <p>Come see us</p>
-    </div>
-  </Layout>
-);
+class Search extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { Information: [] };
+  }
 
-export default Owner;
+  render() {
+    return;
+  }
+}
+
+export default () => {
+  return (
+    <Layout>
+      <Owner />
+    </Layout>
+  );
+};
