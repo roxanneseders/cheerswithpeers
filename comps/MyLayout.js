@@ -2,12 +2,10 @@ import Head from "next/head";
 import Navbar from "./Navbar";
 import BttmBttnNv from "./BttmBttnNv";
 
-
-
 const MyLayout = props => (
   <div>
     <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="viewport" content="max=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
       <title>CHEERS</title>
       <link rel="icon" href="/static/favicon.ico" />
@@ -16,13 +14,13 @@ const MyLayout = props => (
         href="https://bootswatch.com/4/cerulean/bootstrap.min.css"
       />
     </Head>
-    <style jsx global>{`
+    {/* <style global jsx>{`
       body { 
-        background: #000;
-        font: 20px menlo;
+        background: #000; <--- get to work all the time
+        font: px menlo;
         color: #aaa;
-      }
-    `}</style>
+      }`}
+    </style> */}
 
     < Navbar />
     <div className="container">{props.children}</div>
@@ -32,4 +30,3 @@ const MyLayout = props => (
 );
 
 export default MyLayout;
-//<--notes:
