@@ -8,6 +8,7 @@ import Navbar from "../comps/Navbar"
 import SearchBar from "../comps/SearchBar"
 import BttmBttnNv from "../comps/BttmBttnNv"
 
+
 const Index = props => (
   <Layout>
     <div>
