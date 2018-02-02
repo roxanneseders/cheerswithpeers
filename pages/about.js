@@ -1,6 +1,7 @@
 import AboutLayout from "../comps/AboutLayout.js";
 import Head from "next/head";
 
+import Layout from "../comps/Layout.js";
 
 const About = () => (
   <AboutLayout>

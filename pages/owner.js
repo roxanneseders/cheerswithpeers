@@ -1,10 +1,10 @@
 import Layout from "../comps/Layout.js";
-import SearchBar from "../comps/SearchBar.js";
+import Owner from "../comps/Owner.js";
 
 class Search extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { pictures: [] };
+    this.state = { Information: [] };
   }
 
   render() {
@@ -14,8 +14,8 @@ class Search extends React.Component {
 
 export default () => {
   return (
-    <MyLayout>
-      <SearchBar />
-    </MyLayout>
+    <Layout>
+      <Owner />
+    </Layout>
   );
 };

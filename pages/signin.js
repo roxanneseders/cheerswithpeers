@@ -7,6 +7,7 @@ import { NextAuth } from 'next-auth-client'
 import Navbar from "../comps/Navbar"
 import SearchBar from "../comps/SearchBar"
 import BttmBttnNv from "../comps/BttmBttnNv"
+import Layout from "../comps/Layout.js";
 
 
 const Index = props => (

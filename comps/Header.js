@@ -1,9 +1,8 @@
-import Header from "./Header";
-
 const Layout = props => (
   <div>
     <h1>
       <title>Cheers!</title>
+      <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" />
       <link
         rel="stylesheet"
         href="https://bootswatch.com/4/cerulean/bootstrap.min.css"

@@ -8,6 +8,7 @@ import BttmBttnNv from "../comps/BttmBttnNv";
 //     <p>Where do you want to go?</p>
 //   </Layout>
 // );
+import Layout from "../comps/Layout.js";
 
 export default () => (
   <div className='hello'>
