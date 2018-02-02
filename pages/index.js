@@ -1,12 +1,12 @@
+import Layout from "../comps/MyLayout.js";
 import Layout from "../comps/Layout";
 
-const Index = props => (
+export default () => (
   <Layout>
     <div>
       <h1>Cheers</h1>
+      <p>Tell us about you</p>
       <p>Come see us</p>
     </div>
   </Layout>
 );
-
-export default Index;
