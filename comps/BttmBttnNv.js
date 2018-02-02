@@ -35,9 +35,15 @@ const BttmBttnNv = () => (
             <a className="nav-link">About</a>
           </Link>
         </li>
+
+        <li className="nav-item">
+          <Link href="/owner">
+            <a className="nav-link">Owner</a>
+          </Link>
+        </li>
       </ul>
-    </div >
-  </nav >
+    </div>
+  </nav>
 );
 
 export default BttmBttnNv;

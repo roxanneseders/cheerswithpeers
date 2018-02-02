@@ -2,12 +2,11 @@ import Head from "next/head";
 import Navbar from "./Navbar";
 import BttmBttnNv from "./BttmBttnNv";
 
-
-
-const MyLayout = props => (
+const Layout = props => (
   <div>
     <Head>
       <title>CHEERS</title>
+      <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" />
       <link
         rel="stylesheet"
         href="https://bootswatch.com/4/cerulean/bootstrap.min.css"
@@ -15,14 +14,11 @@ const MyLayout = props => (
     </Head>
     <Navbar />
 
-
     <div className="container">{props.children}</div>
 
-    <img src='../static/img/craftbeer.jpg' />
+    <img src="../static/img/craftbeer.jpg" />
     <BttmBttnNv />
-
   </div>
 );
 
-export default MyLayout;
-//<--notes:
+export default Layout;
