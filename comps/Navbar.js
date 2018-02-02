@@ -1,6 +1,4 @@
 import Link from "next/link";
-import SearchBar from "./SearchBar";
-
 
 const Navbar = () => (
   <nav className="navbar navbar-expand navbar-dark bg-dark mb-4">
@@ -13,7 +11,6 @@ const Navbar = () => (
               <a className="nav-link">Home</a>
             </Link>
           </li>
-          <SearchBar />
         </ul>
       </div>
     </div>
